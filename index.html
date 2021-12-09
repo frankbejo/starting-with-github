@@ -6,26 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./image/icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Github</title>
 </head>
 <body>
-    
-    <div class="navcontainer">
-        <div class="navbar">
-            <a href="#" class="icon"><i class="fab fa-accusoft "></i>PORT</a>
-                <ul class="list">
-                    <li class="listitem"><a href="#">ABOUT</a></li>
-                    <li class="listitem"><a href="#">SKILLS</a></li>
-                    <li class="listitem"><a href="#">PROJECTS</a></li>
-                    <li class="listitem"><a href="#">CONTACTS</a></li>
-                </ul>
+<div class="navbar-fixed">
+    <nav class="black ">
+        <div class="nav-wrapper container">
+            <a href="#" class="logo"><i class="material-icons left" style="font-size: 40px">all_inclusive</i>INFINITE</a>
+            <ul class=" list right hide-on-med-and-down">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+            
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-small right"><i class="material-icons" style="font-weight: 800; font-size: 31px;">menu</i></a>
+            
+        </div> 
+    </nav>
+</div>
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background black">
+            </div>
+            <a href="#user"><img class="circle" src="./image/Frak.png"></a>
+            <a href="#name"><span class="white-text name">Frank Bejo</span></a>
+            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
         </div>
-    </div>
-    <div class="bg-container"></div>
-    <section class="head">
-        <h1 class="header">Title</h1>
-    </section>
-    <script src="./index.js"></script>
+    </li>
+    <li><a href="#" class="waves-effect black-text">ABOUT</a></li>
+    <li><a href="#">SKILLS</a></li>
+    <li><a href="#">PROJECTS</a></li>
+    <li><a href="#">CONTACTS</a></li>
+    </ul>
+
+<div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quaerat architecto rerum nihil laboriosam facere dolor id cupiditate. At, nostrum consequuntur. Ad sed, expedita consequuntur nesciunt nulla et totam reprehenderit recusandae animi? Reiciendis reprehenderit quisquam iusto fuga itaque deserunt!</p>
+    <a id="learn" class="left black waves-effect waves-light white-text" href="#">LEARN MORE<i class="material-icons right">arrow_forward</a>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav({
+            edge: "right"
+        });
+    })
+</script>
 </body>
 </html>

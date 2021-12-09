@@ -1,84 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo i{
+    font-weight: 900;
+    font-size: 60px;
+}
+
+ul li{
+    font-weight: 600 ;
+}
+
+#learn{
+    padding: 10px;
+}
+
+#slide-out{
+    background-color: white;
 }
 
 body{
-    font-family: 'Josefin Sans', sans-serif;
     height: 1000px;
 }
-
-.bg-container{
-    background-image: url(/image/wallpaper.jpg);
-    height: 60%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -100;
-    position: fixed;
-}
-.head{
-    background-image: linear-gradient(to bottom, #004856, #981f00, #004856 );
-    height: 100%;
-    margin-top: 59vh;
-    transition: ease-in-out 300ms;
-}
-
-.navcontainer{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.navbar{
-    width: 90%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 100;
-}
-
-.icon{
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-    font-weight: 900;
-}
-
-.fab{
-    font-size: 30px;
-    margin-right: 5px;
-}
-
-.list{
-    list-style: none;
-    display: flex;
-}
-
-.list a{
-    text-decoration: none;
-    color: white;
-}
-
-.listitem{
-    margin-left: 20px;
-    font-size: 13px;
-}
-
-@media only screen and (max-width: 700px) {
-    .head {
-        margin-top: 400px;
-    }
-  }
-
-  @media only screen and (min-width: 1000px) {
-    .head {
-        margin-top:59vh;
-    }
-  }
